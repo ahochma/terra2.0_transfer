@@ -14,9 +14,9 @@ import time
 SOURCE_VAULTS = ["24", "0"]  # Configure Vault Ids as strings.
 DESTINATION = "dest_add"
 MEMO = ""  # Custom Memo for all transactions.
-# noinspection DuplicatedCode
 API_KEY = "<your_api_key"
 API_SECRET = open('<path_to_secret.key>', 'r').read()
+
 FBKS_SDK = FireblocksSDK(API_SECRET, API_KEY)
 
 FEE_COIN = "uluna"
