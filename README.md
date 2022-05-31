@@ -13,19 +13,20 @@ sudo python certificate.py
 ​
 ## Configuration
 
-### There are 2 scripts that can be used: transfer_cli.py and transfer_auto.py
+### There are 2 scripts that can be used: transfer_cli.py OR transfer_auto.py
 
 ### CLI
-The CLI script (transfer_cli.py) is an interactive scripts that prompts for the required inputs.
+The CLI script (transfer_cli.py) is an interactive script that prompts for the required inputs.
 It will require to set up an API user and configure its corresponding API key and relevant 
-private key location. The required parameters that should be updated in the script are:
+private key location. 
+The required parameters that should be updated in the script are:
 ```
 API_KEY
 API_SECRET
 ```
 ​
 ### Automatic Transfer
-The automatic script does not have an interactive interface and in addition to the configuration mentioned aboverequires to update the script with the following parameters:
+The automatic script does not have an interactive interface and in addition to the configuration mentioned above it is required to update the following parameters:
 ```
 SOURCE_VAULTS - list of source vault accounts. For example - SOURCE_VAULTS = ["24", "0"] 
 DESTINATION - the destination to move the funds out to. For example - DESTINATION = "terra123123123123123123123123123123123123123"
