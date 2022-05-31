@@ -2,6 +2,12 @@
 
 This SDK provides an automatic and a CLI version to transfer Terra 2.0 Luna to a specific address.
 ## Requirements
+
+Clone the repo:
+```
+git clone https://github.com/fireblocks/terra2.0_transfer.git
+
+```
 Install dependencies:
 ```
 pip install -r req.txt
