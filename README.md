@@ -32,7 +32,7 @@ SOURCE_VAULTS - list of source vault accounts. For example - SOURCE_VAULTS = ["2
 DESTINATION - the destination to move the funds out to. For example - DESTINATION = "terra123123123123123123123123123123123123123"
 MEMO - if the destination wallet requires a MEMO, esle leave empty string. For example - MEMO = "FBFBFBFBFBFBFBFB"
 ```
-### To execute either of the scripts please run after updating the relevant script with all the parameters mentioned in the above:
+### To execute either of the scripts please run (after updating the relevant script with all the parameters mentioned in the above):
 ```
 python transfer_cli.py OR python transfer_auto.py
 ```
