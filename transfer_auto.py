@@ -11,8 +11,6 @@ import hashlib
 import time
 
 # Client Config
-# IMPORTANT! If you are sending a corresponding account to account assets, SOURCE_VAULTS[current_index] assets will be
-# sent to the very same position over DESTINATIONS, meaning DESTINATIONS[current_index]
 SOURCE_VAULTS = ["24", "0"]  # Configure Vault Ids as strings.
 DESTINATION = "dest_add"
 MEMO = ""  # Custom Memo for all transactions.
