@@ -1,4 +1,4 @@
-# Terra Transfer
+# Terra Luna 2.0 Transfer
 
 This SDK provides an automatic and a CLI version to transfer Terra 2.0 Luna to a specific address.
 ## Requirements
