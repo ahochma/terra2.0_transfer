@@ -12,20 +12,26 @@ sudo python certificate.py
 ```
 ​
 ## Configuration
+
+### There are 2 scripts that can be used: transfer_cli.py and transfer_auto.py
+
 ### CLI
-The CLI tool (transfer_cli.py) will only require to set up an API user and configure its corresponding API key and relevant 
-private key location. The rest of the information will be put through the programs prompts.
+The CLI script (transfer_cli.py) is an interactive scripts that prompts for the required inputs.
+It will require to set up an API user and configure its corresponding API key and relevant 
+private key location. The required parameters that should be updated in the script are:
+```
+API_KEY
+API_SECRET
+```
 ​
 ### Automatic Transfer
-In addition to the configuration mentioned above, the below will be required as well:
-* A list of vaults to transfer from. These will be identified through the vault ID, as a string. For example:
+The automatic script does not have an interactive interface and in addition to the configuration mentioned aboverequires to update the script with the following parameters:
 ```
-SOURCE_VAULTS = ["24", "0"] 
+SOURCE_VAULTS - list of source vault accounts. For example - SOURCE_VAULTS = ["24", "0"] 
+DESTINATION - the destination to move the funds out to. For example - DESTINATION = "terra123123123123123123123123123123123123123"
+MEMO - if the destination wallet requires a MEMO, esle leave empty string. For example - MEMO = "FBFBFBFBFBFBFBFB"
 ```
-* Destination, a single address, stored as a string. For example:
+### To execute either of the scripts please run after updating the relevant script with all the parameters mentioned in the above:
 ```
-DESTINATION = "terra123123123123123123123123123123123123123"
+python transfer_cli.py OR python transfer_auto.py
 ```
-* Memo for all transactions:
-```
-MEMO = "FBFBFBFBFBFBFBFB"
